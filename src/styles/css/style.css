@@ -1,0 +1,126 @@
+@import url('https://fonts.googleapis.com/css2?family=Montserrat&display=swap');
+
+* {
+  padding: 0;
+  margin: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: 'Montserrat', sans-serif;
+  font-size: 16px;
+}
+
+.navbar {
+  background-color:white;
+  color: black;
+  height: 150px;
+  display: flex;
+  text-align: center;
+  justify-content: center;
+  align-items: center;
+  font-weight: bold;
+  font-size: 30px;
+  border: black solid 2px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+
+main {
+  width: 100%;
+  max-width: 1200px;
+  margin: 32px auto;
+}
+
+anime-list {
+  display: block;
+  margin-top: 16px;
+  width: 100%;
+  padding: 20px;
+}
+
+.placeholder {
+  font-weight: lighter;
+  color: rgba(0, 0, 0, 0.5);
+}
+
+.search-container {
+  border: black solid 2px;
+  padding: 16px;
+  border-radius: 5px;
+  top: 10px;
+  background-color: white;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.search-container > input {
+  width: 100%;
+  padding: 16px;
+  border: 0;
+  font-weight: bold;
+}
+
+.search-container>input:focus::placeholder {
+  font-weight: bold;
+}
+
+.search-container>input::placeholder {
+  color: black;
+  font-weight: normal;
+}
+
+.card-body {
+  margin-left: 10px;
+}
+
+.card-group > .card > .row > .card-header {
+  justify-content: center;
+  align-items: center;
+  display: flex;
+  padding-top: 15px;
+  background-color: white;
+  margin-bottom: 10px;
+  border-bottom: black solid 2px;
+}
+
+.card-group > .card > .row > .card-header > h3 {
+  font-size: 25px;
+  font-weight: bold;
+  
+}
+
+.card-group > .card {
+  border: black solid 2px;
+  box-shadow: 5px 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.card-group > .card > .row > .col-sm-3 > img {
+  margin-bottom: 16px;
+  margin-left: 10px;
+  border: 2px solid black;
+}
+
+.card-group > .card > .row > .col-sm-3 > p {
+  padding-left: 16px;
+}
+
+
+@media screen and (max-width: 550px) {
+  .search-container {
+    flex-direction: column;
+    position: static;
+  }
+
+  .search-container>input {
+    width: 100%;
+    margin-bottom: 12px;
+  }
+
+  .search-container>button {
+    width: 100%;
+  }
+
+  nav {
+    width: 100%;
+  }
+}
